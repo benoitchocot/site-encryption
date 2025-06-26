@@ -1,0 +1,189 @@
+@import "vars";
+
+#new-project input,
+#new-project textarea {
+    border: 1px solid $low;
+    background-color: $background-color-fade;
+    margin-left: $p-1;
+    margin-right: $p-1;
+}
+
+.project-header {
+    padding-top: $padding-large;
+    padding-bottom: $padding-large;
+
+    h1 {
+        font-size: 36px;
+        color: $secondary;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+}
+
+.skill {
+
+    /* remove number input arrows Chrome, Safari, Edge, Opera */
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    /* remove number input arrows Firefox */
+    input[type=number] {
+        -moz-appearance: textfield;
+    }
+
+    .input-like {
+        color: $primary;
+    }
+}
+
+.description {
+    textarea {
+        width: 100%;
+        border-color: $white;
+        color: $text-light;
+    }
+
+    color: $text-light;
+}
+
+.normal textarea {
+    font-size: $size;
+}
+
+.small {
+    font-size: $size;
+}
+
+.name, .description, .ability, .load, .cost {
+    display: flex;
+    align-items: center;
+}
+
+.feature-line .input-align input {
+    width: 4rem;
+    text-align: right;
+    height: auto;
+}
+
+.input-align {
+    input {
+        width: 2rem;
+        text-align: center;
+        color: $primary;
+    }
+}
+
+.hidden-field {
+    display: none;
+}
+
+.collapse-toggler:after {
+    font-family: FontAwesome, serif;
+    content: "\f0d7";
+    float: right;
+    transition-duration: 0.5s;
+}
+
+.collapse-toggler.collapsed:after {
+    transform: rotateZ(0.25turn);
+    transition-duration: 0.5s;
+}
+
+.feature-category {
+    background: $light;
+}
+
+.nav-pills .nav-link {
+    position: relative;
+}
+
+.variant-nav-link {
+    border: 1px solid $light;
+    margin-right: $margin;
+    background-color: $background-color-fade;
+}
+
+.input-like {
+    padding: $p-1 $p-2;
+}
+
+.figures-card {
+    background: $light;
+    padding: $padding;
+}
+
+.name {
+    font-size: $size-xl;
+
+    input {
+        border-color: $white;
+    }
+
+    #project_name {
+        font-weight: bold;
+    }
+}
+
+
+.stat_project {
+    background-color: $light-grey;
+    width: 415px;
+    border-radius: $radius;
+    padding: 15px 20px 0 20px;
+
+    .wrapper {
+        box-sizing: border-box;
+        width: 100%;
+
+        .fa-eur, .fa-user-clock {
+            font-size: $size-xl;
+        }
+
+        input, select {
+            border-color: $light-grey;
+        }
+
+        .input-info-header {
+            font-size: $size-md;
+            color: $dark;
+            border-color: $light-grey;
+
+            &:focus, &:hover {
+                border: none;
+                background-color: inherit;
+            }
+        }
+
+        .select {
+            font-size: $size-large;
+        }
+
+        .stat_errors li {
+            color: $high;
+        }
+    }
+}
+
+.application {
+    select {
+        border-color: $white;
+        color: $text-light;
+    }
+
+    p {
+        font-size: $size-large;
+    }
+}
+
+.button-panel .panel-left .form-btn {
+    margin-left: 0;
+}
+
+.form-check-inline input {
+    width: 15px;
+    height: 15px;
+}

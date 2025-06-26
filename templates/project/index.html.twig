@@ -1,0 +1,92 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Big Bill | Projets{% endblock %}
+
+{% block body %}
+    <h1>Liste des projets</h1>
+    <div class="text-right">
+        <a class=" btn btn-primary mb-3" href="{{ path('project_new') }}"><i class="fas fa-plus-circle mr-1"></i>Ajouter un projet</a>
+    </div>
+    <table class="table table-hover project-index">
+        <thead>
+            <tr>
+                <th class="text-center name"><a href="{{ path('project_index')}}?sort=name&direction={{ newDirection}}">Nom du projet <i class="sort-{{ sort=='name'?'active':'inactive' }} fas fa-angle-{{ newDirection=='asc'?'up':'down' }}"></i></a></th>
+                <th class="text-center date"><a href="{{ path('project_index')}}?sort=date&direction={{ newDirection}}">Création <i class="sort-{{ sort=='date'?'active':'inactive' }} fas fa-angle-{{ newDirection=='asc'?'up':'down' }}"></i></a></th>
+                <th class="text-center description">Description</th>
+                <th class="text-center cost">Chiffrage</th>
+                <th class="text-center variant"><a href="{{ path('project_index')}}?sort=quotation&direction={{ newDirection}}">Variante <i class="sort-{{ sort=='quotation'?'active':'inactive' }} fas fa-angle-{{ newDirection=='asc'?'up':'down' }}"></i></a></th>
+                <th class="text-center action">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for project in projects %}
+            <tr>
+                <th class="text-center name">
+                    <span class="text-overflow-dynamic-container">
+                        <span class="text-overflow-dynamic-ellipsis" data-toggle="tooltip" title="{{ project.name }}">
+                            {{ project.name }}
+                        </span>
+                    </span>
+                </th>
+                <td class="text-center date">{{ project.date ? project.date|date('d/m/Y') : '' }}</td>
+                <td class="text-center description">
+                    <span class="text-overflow-dynamic-container">
+                        <span class="text-overflow-dynamic-ellipsis" data-toggle="tooltip" title="{{ project.description }}">
+                            {{ project.description }}
+                        </span>
+                    </span>
+                </td>
+
+                {%  set highCostTip = costs[project.id]['cost']['high']|number_format(2, '.', ',') ~ ' €' %}
+                {%  set middleCostTip = costs[project.id]['cost']['middle']|number_format(2, '.', ',') ~ ' €' %}
+                {%  set lowCostTip = costs[project.id]['cost']['low']|number_format(2, '.', ',') ~ ' €' %}
+
+                {%  set highLoadTip = costs[project.id]['load']['high']|number_format(2, '.', ',') ~ ' jours' %}
+                {%  set middleLoadTip = costs[project.id]['load']['middle']|number_format(2, '.', ',') ~ ' jours' %}
+                {%  set lowLoadTip = costs[project.id]['load']['low']|number_format(2, '.', ',') ~ ' jours' %}
+
+                <td class="text-center text-nowrap cost"
+                    data-toggle="tooltip"
+                    data-placement="left"
+                    data-html="true"
+                    title=" <h6> High :</h6>
+                    <p>{{ highCostTip }}</p>
+                    <p>{{ highLoadTip }}</p>
+                    <h6> Middle :</h6>
+                    <p>{{ middleCostTip }}</p>
+                    <p>{{ middleLoadTip }}</p>
+                    <h6> Low :</h6>
+                    <p>{{ lowCostTip }}</p>
+                    <p>{{ lowLoadTip }}</p>"
+                >
+                    {{ _context[project.quotation.name ~ 'CostTip'] }}
+                    <p class="small">({{ _context[project.quotation.name ~ 'LoadTip'] }})</p>
+                </td>
+
+                <td class="text-center variant">{{ project.quotation.name }}</td>
+
+                <td class="btn-row action">
+                    {% if is_granted('ROLE_ADMIN') %}
+                    {{ include('project/_delete_form.html.twig') }}
+                    {% endif %}
+                    <a title="Editer" class="btn btn-sm btn-primary ml-2" href="{{ path('project_edit', {'id': project.id}) }}">
+                        <i class="fas fa-pencil-alt"></i>
+                    </a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td class="text-center" colspan="4">Pas de projets enregistrés !</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+    <div class="navigation my-5">
+        {{ knp_pagination_render(projects) }}
+    </div>
+{% endblock %}
+
+{% block stylesheets %}
+    {{ encore_entry_link_tags('app') }}
+    {{ encore_entry_link_tags('index') }}
+{% endblock %}

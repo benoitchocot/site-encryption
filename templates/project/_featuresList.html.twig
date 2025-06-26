@@ -1,0 +1,37 @@
+<table class="table table-hover feature-list">
+
+    <thead>
+    <tr>
+        <th scope="col">Nom de la fonctionnalité</th>
+        <th class="text-center" scope="col">Catégorie de la fonctionnalité</th>
+        <th colspan="2" class="text-left" scope="col">Charge estimée</th>
+    </tr>
+    </thead>
+    <tbody>
+
+    {%  for featureCategory in projectSynthesis[activeVariant]|keys %}
+        <tr>
+            <td colspan="2" class="feature-category">
+                <div>
+                    {{ featureCategory }}
+                </div>
+            </td>
+
+            <td colspan="1" class="feature-category">
+                <div class="m-0 text-center">{{ projectSynthesis[activeVariant][featureCategory].load | number_format(2, '.', ' ') }} j*h</div>
+                <div class="small m-0 text-center">{{ projectSynthesis[activeVariant][featureCategory].cost | number_format(2, '.', ' ') }} €.</div>
+            </td>
+            <td colspan="1" class="feature-category"></td>
+        </tr>
+
+        {% for projectFeature in form.projectFeatures %}
+            {% if featureCategory == projectFeature.vars.data.category.name %}
+                {{ include('project/_featureLine.html.twig') }}
+            {%  endif %}
+        {% endfor %}
+    {% else %}
+        <td colspan="4">Pas de fonctionnalité enregistrée !</td>
+    {% endfor %}
+
+    </tbody>
+</table>

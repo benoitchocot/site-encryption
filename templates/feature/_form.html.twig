@@ -1,0 +1,57 @@
+{{ form_start(form) }}
+<div class="container">
+    <div class="form-group">
+        <div class="col-12 name">
+            {{ form_label(form.name, "Nom") }}
+        </div>
+        <div class="col-12">
+            {{ form_widget(form.name) }}
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-12">
+            {{ form_label(form.day, "Charge") }}
+        </div>
+        <div class="col-12 ">
+            {{ form_widget(form.day) }}
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-12 ">
+            {{ form_label(form.description, "Description") }}
+        </div>
+        <div class="col-12 ">
+            {{ form_widget(form.description) }}
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-12 ">
+            {{ form_label(form.category, "Catégorie") }}
+        </div>
+        <div class="col-12">
+            {{ form_widget(form.category) }}
+        </div>
+    </div>
+
+    {% if form.isHigh is defined %}
+        <div class="col-12">
+            {{ form_label(form.category, "Ajouter à la variante ") }}
+            {{ form_widget(form.isHigh) }}
+            {{ form_widget(form.isMiddle) }}
+            {{ form_widget(form.isLow) }}
+        </div>
+    {% endif %}
+
+</div>
+
+<div class="button-panel">
+    <button class="btn btn-primary form-btn"><i class="fas fa-check m-1"></i> Enregistrer les modifications</button>
+    {% if id is defined %}
+        {% set route = path('project_edit', {'id':id}) %}
+        {% set label = 'Revenir à la fiche projet' %}
+    {% endif %}
+    <a class="btn btn-outline-primary form-btn" href="{{ route ?? path('feature_index') }}">
+        <i class="fa fa-arrow-left m-1"></i> {{ label ?? 'Revenir à la liste des fonctionnalités' }}
+    </a>
+</div>
+{{ form_end(form) }}
