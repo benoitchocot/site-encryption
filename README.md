@@ -1,4 +1,4 @@
-# Easter App
+# Site Encryption
 
 This application in a project cost evaluation application.
 It helps you to calculate a project cost based on the project feature and the project team experience.
@@ -33,7 +33,7 @@ Once this best solution is choosen, you can print it as a pdf document.
 ```php bin/console doctrine:fixtures:load --group=UserFixtures --append```  
 
 7. Change your admin login and password
-The initial administrator account is `johndoe@easterapp.fr` with password `adminpassword`. Make sure to change them to prevent anyone to access your data
+The initial administrator account is `johndoe@encryption.fr` with password `adminpassword`. Make sure to change them to prevent anyone to access your data
 
 8. If needed, you can fill the database with fake records for testing purpose.  bin/console doctrine:fixture:load
 
@@ -91,19 +91,13 @@ Next continue from the step 2 of the install paragraph.
 
 
 ## Authors
-
-Wild Code School trainers team
-
-Adrien MAILLARD  
+  
 Benoît CHOCOT  
-Anthony ROSSIGNOL  
-Dewi DIERICK  
 
 ## License
 
 MIT License
 
-Copyright (c) 2019 aurelien@wildcodeschool.fr
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
