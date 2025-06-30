@@ -1,0 +1,27 @@
+<?php //App%255CEntity%255CProject%2523getTotalEmployee
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['Symfony\\Component\\Validator\\Constraints\\EqualTo'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Validator\\Constraints\\EqualTo')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'message' => [
+                'Le total des pourcentages doit être égal à 100%',
+            ],
+            'value' => [
+                100,
+            ],
+            'groups' => [
+                [
+                    'Default',
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+    ],
+    []
+); }];

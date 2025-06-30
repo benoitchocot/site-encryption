@@ -26,5 +26,8 @@ db-schema:
 db-fixtures:
 	docker exec -it $(APP_CONTAINER) php bin/console doctrine:fixtures:load --group=UserFixtures --append
 
+db-fixtures-all:
+	docker exec -it $(APP_CONTAINER) php bin/console doctrine:fixtures:load --no-interaction
+
 logs:
 	docker compose logs -f

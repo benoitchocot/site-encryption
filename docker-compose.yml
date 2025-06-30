@@ -25,12 +25,16 @@ services:
       - db_data:/var/lib/mysql
 
   node:
-    image: node:16
+    image: node:18
     container_name: easterapp_node
     working_dir: /app
     volumes:
       - ./:/app
     command: sh -c "yarn install && yarn run dev"
+    build:
+      context: .
+      dockerfile: Dockerfile.node
+
 
 volumes:
   db_data:

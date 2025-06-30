@@ -1,0 +1,113 @@
+{
+  "entrypoints": {
+    "app": {
+      "js": [
+        "/build/runtime.js",
+        "/build/vendors~app~easyautocomplete.js",
+        "/build/vendors~app.js",
+        "/build/app.js"
+      ],
+      "css": [
+        "/build/app.css"
+      ]
+    },
+    "projectDetails": {
+      "js": [
+        "/build/runtime.js",
+        "/build/projectDetails.js"
+      ],
+      "css": [
+        "/build/projectDetails.css"
+      ]
+    },
+    "securityjs": {
+      "js": [
+        "/build/runtime.js",
+        "/build/vendors~easyautocomplete~securityjs~uploadform.js",
+        "/build/vendors~securityjs~uploadform.js",
+        "/build/securityjs.js"
+      ]
+    },
+    "easyautocomplete": {
+      "js": [
+        "/build/runtime.js",
+        "/build/vendors~easyautocomplete~securityjs~uploadform.js",
+        "/build/vendors~app~easyautocomplete.js",
+        "/build/vendors~easyautocomplete.js",
+        "/build/easyautocomplete.js"
+      ]
+    },
+    "uploadform": {
+      "js": [
+        "/build/runtime.js",
+        "/build/vendors~easyautocomplete~securityjs~uploadform.js",
+        "/build/vendors~securityjs~uploadform.js",
+        "/build/uploadform.js"
+      ]
+    },
+    "index": {
+      "js": [
+        "/build/runtime.js"
+      ],
+      "css": [
+        "/build/index.css"
+      ]
+    },
+    "user": {
+      "js": [
+        "/build/runtime.js"
+      ],
+      "css": [
+        "/build/user.css"
+      ]
+    },
+    "security": {
+      "js": [
+        "/build/runtime.js"
+      ],
+      "css": [
+        "/build/security.css"
+      ]
+    },
+    "profile": {
+      "js": [
+        "/build/runtime.js"
+      ],
+      "css": [
+        "/build/profile.css"
+      ]
+    },
+    "navbar": {
+      "js": [
+        "/build/runtime.js"
+      ],
+      "css": [
+        "/build/navbar.css"
+      ]
+    },
+    "easyAutocomplete": {
+      "js": [
+        "/build/runtime.js"
+      ],
+      "css": [
+        "/build/easyAutocomplete.css"
+      ]
+    },
+    "category": {
+      "js": [
+        "/build/runtime.js"
+      ],
+      "css": [
+        "/build/category.css"
+      ]
+    },
+    "errors": {
+      "js": [
+        "/build/runtime.js"
+      ],
+      "css": [
+        "/build/errors.css"
+      ]
+    }
+  }
+}
