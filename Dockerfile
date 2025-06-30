@@ -1,93 +1,37 @@
-FROM php:7.4-fpm
+# Dockerfile
+FROM php:7.2-apache
+
+# Install system dependencies
+RUN apt-get update && apt-get install -y \
+    git zip unzip curl libpng-dev libjpeg-dev libonig-dev libxml2-dev \
+    libzip-dev libmcrypt-dev libicu-dev libxslt1-dev libpq-dev \
+    libfreetype6-dev libjpeg62-turbo-dev libjpeg-dev libpng-dev \
+    libmagickwand-dev libmagickcore-dev libxml2-dev mariadb-client \
+    && docker-php-ext-install pdo pdo_mysql mysqli zip mbstring intl xml opcache
+
+# Enable Apache mod_rewrite
+RUN a2enmod rewrite
+
+# Install Composer
+COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
 
 # Set working directory
-WORKDIR /var/www
-# Copy Symfony application directories
-COPY ./ /var/www/
+WORKDIR /var/www/html
 
-# Install PHP dependencies
-RUN apt-get update && apt-get install -y \
-    build-essential \
-    libpng-dev \
-    libpq-dev \
-    libonig-dev \
-    libjpeg62-turbo-dev \
-    libfreetype6-dev \
-    libmcrypt-dev \
-    libpng-dev \
-    libwebp-dev \
-    zlib1g-dev \
-    libxml2-dev \
-    libzip-dev \
-    libonig-dev \
-    graphviz \
-    locales \
-    zip \
-    jpegoptim optipng pngquant gifsicle \
-    vim \
-    unzip \
-    git \
-    git \
-    curl \
-    libcurl4 \
-    libcurl4-openssl-dev \
-    nginx
+# Copy source code
+COPY . /var/www/html
+
+# Après COPY source code
+COPY apache.conf /etc/apache2/sites-available/000-default.conf
+
+RUN a2dissite 000-default.conf \
+    && a2ensite 000-default.conf \
+    && a2enmod rewrite
 
 
-# Clear cache
-RUN apt-get clean && rm -rf /var/lib/apt/lists/*
-# mcrypt
-RUN pecl install mcrypt-1.0.3
-RUN docker-php-ext-enable mcrypt
-# Install extensions
-RUN docker-php-ext-configure gd --enable-gd --with-freetype --with-jpeg --with-webp
-RUN docker-php-ext-install -j$(nproc) gd
-RUN docker-php-ext-install pdo_mysql 
-RUN docker-php-ext-install mbstring 
-RUN docker-php-ext-install zip 
-RUN docker-php-ext-install exif 
-RUN docker-php-ext-install pcntl
-RUN docker-php-ext-install -j$(nproc) intl
+# Set permissions
+RUN chown -R www-data:www-data /var/www/html
 
-# Install composer
-RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
-
-# Copy composer.lock and composer.json
-#COPY ./composer.lock ./composer.json /var/www/
-RUN if [ ${APP_ENV} = "prod" ] ; then composer install --no-dev --no-interaction -o ; else composer install --no-interaction -o ; fi
-
-# Install JS dependencies
-COPY ./package.json ./yarn.lock ./webpack.config.js /var/www/
-COPY assets /var/www/assets
-RUN curl -sL https://deb.nodesource.com/setup_12.x | bash -
-RUN apt-get update && apt-get install -y nodejs
-
-RUN npm install npm@latest -g
-RUN npm install yarn@latest -g
-RUN nodejs -v
-RUN npm -v
-RUN yarn install --production=false
-RUN yarn encore production --verbose
-# RUN npm install --verbose 
-# RUN npm run build --production --verbose
-
-
-RUN ls /var/www/
-
-# Copy server configuration files
-COPY ./nginx.conf /etc/nginx/conf.d/app.conf
-RUN ls /etc/nginx/conf.d
-
-COPY ./php.ini /usr/local/etc/php/conf.d/local.ini
-RUN ls /usr/local/etc/php/conf.d
-RUN cat /usr/local/etc/php/conf.d/local.ini
-
-RUN rm -rf /etc/nginx/sites-enabled
-RUN mkdir -p /etc/nginx/sites-enabled
-
-# Expose port 80 and start php-fpm server
+# Expose port
 EXPOSE 80
 
-COPY docker-entry.sh /
-RUN chmod +x /docker-entry.sh
-CMD ["/docker-entry.sh"]
