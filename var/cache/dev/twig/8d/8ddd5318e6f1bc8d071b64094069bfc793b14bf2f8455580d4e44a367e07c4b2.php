@@ -70,6 +70,6 @@ class __TwigTemplate_7e51da1c03243c3f30600cecc44273e2bbccf3427acf3e61dd63008a464
     public function getSourceContext()
     {
         return new Source("<?php echo \$view['form']->block(\$form, 'button_widget', ['type' => \$type ?? 'reset']) ?>
-", "@Framework/Form/reset_widget.html.php", "/home/bonoit/Projets Web/site-encryption/vendor/symfony/framework-bundle/Resources/views/Form/reset_widget.html.php");
+", "@Framework/Form/reset_widget.html.php", "/var/www/html/vendor/symfony/framework-bundle/Resources/views/Form/reset_widget.html.php");
     }
 }

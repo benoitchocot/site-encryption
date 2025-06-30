@@ -904,6 +904,6 @@ class __TwigTemplate_a20105287c0dcee31a534ac67f46106e46449df84f9dd8ea6ea930a4ee5
         {% endautoescape %}</script>
     </div>
 {% endmacro %}
-", "@WebProfiler/Collector/time.html.twig", "/home/bonoit/Projets Web/site-encryption/vendor/symfony/web-profiler-bundle/Resources/views/Collector/time.html.twig");
+", "@WebProfiler/Collector/time.html.twig", "/var/www/html/vendor/symfony/web-profiler-bundle/Resources/views/Collector/time.html.twig");
     }
 }

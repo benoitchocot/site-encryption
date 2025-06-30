@@ -98,6 +98,6 @@ class __TwigTemplate_2a7b5833e084accb97243413f3e43b554a75bd03bd57079829e8abe35c6
         <i class=\"fas fa-trash-alt\"></i>
     </button>
 </form>
-", "project/_delete_form.html.twig", "/home/bonoit/Projets Web/site-encryption/templates/project/_delete_form.html.twig");
+", "project/_delete_form.html.twig", "/var/www/html/templates/project/_delete_form.html.twig");
     }
 }

@@ -117,6 +117,6 @@ class __TwigTemplate_1d1a4d56ca9529756b248d20196127edacbb44cdfc1356a5e7c49c1bb13
 {{ include('@Twig/Exception/traces.txt.twig', { exception: e }, with_context = false) }}
 
 {% endfor %}
-", "@Twig/Exception/exception.txt.twig", "/home/bonoit/Projets Web/site-encryption/vendor/symfony/twig-bundle/Resources/views/Exception/exception.txt.twig");
+", "@Twig/Exception/exception.txt.twig", "/var/www/html/vendor/symfony/twig-bundle/Resources/views/Exception/exception.txt.twig");
     }
 }

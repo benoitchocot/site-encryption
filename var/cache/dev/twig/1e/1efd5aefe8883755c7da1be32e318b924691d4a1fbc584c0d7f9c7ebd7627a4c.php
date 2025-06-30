@@ -67,6 +67,6 @@ class __TwigTemplate_47d3f3d5e5485d8a07d36bcece2e28cfd1da8469c1570425fe6bceaeb8e
 
     public function getSourceContext()
     {
-        return new Source("", "@Framework/Form/button_label.html.php", "/home/bonoit/Projets Web/site-encryption/vendor/symfony/framework-bundle/Resources/views/Form/button_label.html.php");
+        return new Source("", "@Framework/Form/button_label.html.php", "/var/www/html/vendor/symfony/framework-bundle/Resources/views/Form/button_label.html.php");
     }
 }

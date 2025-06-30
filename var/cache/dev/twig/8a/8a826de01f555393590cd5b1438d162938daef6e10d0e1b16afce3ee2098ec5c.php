@@ -200,6 +200,6 @@ class __TwigTemplate_ac4a48ad0966b26bbd6c0dc1fe12ef3e19f9ab9418048a490d43dfc27a9
         </div>
     </div>
 </div>
-", "@Twig/Exception/traces.html.twig", "/home/bonoit/Projets Web/site-encryption/vendor/symfony/twig-bundle/Resources/views/Exception/traces.html.twig");
+", "@Twig/Exception/traces.html.twig", "/var/www/html/vendor/symfony/twig-bundle/Resources/views/Exception/traces.html.twig");
     }
 }

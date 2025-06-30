@@ -106,6 +106,6 @@ class __TwigTemplate_efd8dbefb5c6bd1a4b26a9a0da074282e97d5d9571c6dec016a4638ee6c
 .container.body_default {
     border-top: 8px solid #aaaaaa;
 }
-", "@email/zurb_2/notification/local.css", "/home/bonoit/Projets Web/site-encryption/vendor/symfony/twig-bridge/Resources/views/Email/zurb_2/notification/local.css");
+", "@email/zurb_2/notification/local.css", "/var/www/html/vendor/symfony/twig-bridge/Resources/views/Email/zurb_2/notification/local.css");
     }
 }

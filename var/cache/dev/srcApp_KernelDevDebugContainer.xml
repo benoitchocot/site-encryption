@@ -5516,7 +5516,7 @@
       <tag name="console.command" command="server:run"/>
       <argument>/var/www/html/public</argument>
       <argument>dev</argument>
-      <argument>/var/www/html/var/cache</argument>
+      <argument>/var/www/html</argument>
       <call method="setName">
         <argument>server:run</argument>
       </call>
@@ -5525,21 +5525,21 @@
       <tag name="console.command" command="server:start"/>
       <argument>/var/www/html/public</argument>
       <argument>dev</argument>
-      <argument>/var/www/html/var/cache</argument>
+      <argument>/var/www/html</argument>
       <call method="setName">
         <argument>server:start</argument>
       </call>
     </service>
     <service id="web_server.command.server_stop" class="Symfony\Bundle\WebServerBundle\Command\ServerStopCommand" public="false">
       <tag name="console.command" command="server:stop"/>
-      <argument>/var/www/html/var/cache</argument>
+      <argument>/var/www/html</argument>
       <call method="setName">
         <argument>server:stop</argument>
       </call>
     </service>
     <service id="web_server.command.server_status" class="Symfony\Bundle\WebServerBundle\Command\ServerStatusCommand" public="false">
       <tag name="console.command" command="server:status"/>
-      <argument>/var/www/html/var/cache</argument>
+      <argument>/var/www/html</argument>
       <call method="setName">
         <argument>server:status</argument>
       </call>

@@ -173,6 +173,6 @@ class __TwigTemplate_c360fe1a482b97540ee2803f31d2ef60d5f847d4c0a93705abbe86db437
         </tr>
     </tbody>
 </table>
-", "@Twig/Exception/traces_text.html.twig", "/home/bonoit/Projets Web/site-encryption/vendor/symfony/twig-bundle/Resources/views/Exception/traces_text.html.twig");
+", "@Twig/Exception/traces_text.html.twig", "/var/www/html/vendor/symfony/twig-bundle/Resources/views/Exception/traces_text.html.twig");
     }
 }

@@ -490,6 +490,6 @@ class __TwigTemplate_3573cbe8c1061830834efc78ee65e03284653ced4fd95d6cbd19f361746
         {% endfor %}
     </table>
 {% endmacro %}
-", "@WebProfiler/Collector/events.html.twig", "/home/bonoit/Projets Web/site-encryption/vendor/symfony/web-profiler-bundle/Resources/views/Collector/events.html.twig");
+", "@WebProfiler/Collector/events.html.twig", "/var/www/html/vendor/symfony/web-profiler-bundle/Resources/views/Collector/events.html.twig");
     }
 }

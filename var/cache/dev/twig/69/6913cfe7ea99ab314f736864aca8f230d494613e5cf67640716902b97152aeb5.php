@@ -94,6 +94,6 @@ class __TwigTemplate_e40bede2746fe2e19530ef4d160af6ff87dca7a0861361410ffe6fcd4cc
 <?xml version=\"1.0\" encoding=\"{{ _charset }}\" ?>
 
 <error code=\"{{ status_code }}\" message=\"{{ status_text }}\" />
-", "@Twig/Exception/error.xml.twig", "/home/bonoit/Projets Web/site-encryption/vendor/symfony/twig-bundle/Resources/views/Exception/error.xml.twig");
+", "@Twig/Exception/error.xml.twig", "/var/www/html/vendor/symfony/twig-bundle/Resources/views/Exception/error.xml.twig");
     }
 }

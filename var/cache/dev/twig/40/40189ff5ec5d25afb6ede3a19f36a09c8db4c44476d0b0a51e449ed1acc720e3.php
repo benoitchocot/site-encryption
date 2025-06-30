@@ -417,6 +417,6 @@ class __TwigTemplate_674b06908656c869a5623c956bf873f793984c2cfb564f3aa78bcfa2970
     {{ parent() }}
     {{ encore_entry_script_tags('uploadform') }}
 {% endblock %}
-", "security/profile.html.twig", "/home/bonoit/Projets Web/site-encryption/templates/security/profile.html.twig");
+", "security/profile.html.twig", "/var/www/html/templates/security/profile.html.twig");
     }
 }

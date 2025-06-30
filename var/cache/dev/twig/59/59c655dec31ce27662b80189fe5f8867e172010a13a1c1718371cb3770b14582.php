@@ -424,6 +424,6 @@ class __TwigTemplate_75f4255180fbdb41d323ccd00ab5d0ad619a01959d1e59a776ef610e187
     });
 })();
 </script>
-", "@WebProfiler/Profiler/settings.html.twig", "/home/bonoit/Projets Web/site-encryption/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/settings.html.twig");
+", "@WebProfiler/Profiler/settings.html.twig", "/var/www/html/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/settings.html.twig");
     }
 }

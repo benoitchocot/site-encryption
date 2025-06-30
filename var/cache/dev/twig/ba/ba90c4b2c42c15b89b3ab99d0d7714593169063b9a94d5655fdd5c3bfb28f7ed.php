@@ -218,6 +218,6 @@ class __TwigTemplate_ded27abf14b1720cfd1481fd4e2a246c57e2c0c51d6f3f1735011e373dd
 {% block javascripts %}
     {{ encore_entry_script_tags('app') }}
 {% endblock %}
-", "project/new.html.twig", "/home/bonoit/Projets Web/site-encryption/templates/project/new.html.twig");
+", "project/new.html.twig", "/var/www/html/templates/project/new.html.twig");
     }
 }

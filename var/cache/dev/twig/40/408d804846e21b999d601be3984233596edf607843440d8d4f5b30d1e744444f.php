@@ -340,6 +340,6 @@ class __TwigTemplate_b6316cc1daf8f33ab6913728f2fe2e1ec0be9620b32d0af3b565c812671
     {{ encore_entry_script_tags('securityjs') }}
 {% endblock %}
 
-", "security/profilepassword.html.twig", "/home/bonoit/Projets Web/site-encryption/templates/security/profilepassword.html.twig");
+", "security/profilepassword.html.twig", "/var/www/html/templates/security/profilepassword.html.twig");
     }
 }

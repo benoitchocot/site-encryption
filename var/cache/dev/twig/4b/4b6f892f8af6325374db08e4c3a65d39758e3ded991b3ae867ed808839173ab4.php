@@ -261,6 +261,6 @@ class __TwigTemplate_a18f6f0fe536560e7b6d9ef2fa54636fa7398887406fcb5c92671bd238e
     {{ parent() }}
     {{ encore_entry_script_tags('securityjs') }}
 {% endblock %}
-", "security/security.html.twig", "/home/bonoit/Projets Web/site-encryption/templates/security/security.html.twig");
+", "security/security.html.twig", "/var/www/html/templates/security/security.html.twig");
     }
 }

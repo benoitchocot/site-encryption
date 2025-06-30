@@ -182,6 +182,6 @@ class __TwigTemplate_163e45be30936191bfe59bbf2d8f2939ca491a99c2464bbb8db43d88cb9
         {%- endfor -%}
     </pre>
 {% endif %}
-", "@Doctrine/Collector/explain.html.twig", "/home/bonoit/Projets Web/site-encryption/vendor/doctrine/doctrine-bundle/Resources/views/Collector/explain.html.twig");
+", "@Doctrine/Collector/explain.html.twig", "/var/www/html/vendor/doctrine/doctrine-bundle/Resources/views/Collector/explain.html.twig");
     }
 }

@@ -124,6 +124,6 @@ class __TwigTemplate_810c5d32cac1a8304073f953997c6e551d6424a18c6272a6cf5ff37be74
     </div>
 </div>
 {{ form_end(form) }}
-", "category/_form.html.twig", "/home/bonoit/Projets Web/site-encryption/templates/category/_form.html.twig");
+", "category/_form.html.twig", "/var/www/html/templates/category/_form.html.twig");
     }
 }

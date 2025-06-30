@@ -115,6 +115,6 @@ class __TwigTemplate_c7704094e1917bc9c7b80233de29961d292d4865d9e339f98e68e41d5e5
   {{ include('@Twig/Exception/trace.txt.twig', { trace: trace }, with_context = false) }}
 {% endfor %}
 {% endif %}
-", "@Twig/Exception/traces.txt.twig", "/home/bonoit/Projets Web/site-encryption/vendor/symfony/twig-bundle/Resources/views/Exception/traces.txt.twig");
+", "@Twig/Exception/traces.txt.twig", "/var/www/html/vendor/symfony/twig-bundle/Resources/views/Exception/traces.txt.twig");
     }
 }

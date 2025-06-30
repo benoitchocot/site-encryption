@@ -220,6 +220,6 @@ class __TwigTemplate_531f3c2ab661baa2d850d9379df5695346d338f2d80593585d95e4d48a3
         {% block body '' %}
     </body>
 </html>
-", "@WebProfiler/Profiler/base.html.twig", "/home/bonoit/Projets Web/site-encryption/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/base.html.twig");
+", "@WebProfiler/Profiler/base.html.twig", "/var/www/html/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/base.html.twig");
     }
 }

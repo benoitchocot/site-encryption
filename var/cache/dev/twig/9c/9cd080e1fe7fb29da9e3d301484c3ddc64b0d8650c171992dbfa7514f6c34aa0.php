@@ -94,6 +94,6 @@ class __TwigTemplate_12987d66b2d53167ebba0e2bd47e53defae328a81036925c226aa76d1ed
 {{ status_code }} {{ status_text }}
 
 */
-", "@Twig/Exception/error.css.twig", "/home/bonoit/Projets Web/site-encryption/vendor/symfony/twig-bundle/Resources/views/Exception/error.css.twig");
+", "@Twig/Exception/error.css.twig", "/var/www/html/vendor/symfony/twig-bundle/Resources/views/Exception/error.css.twig");
     }
 }

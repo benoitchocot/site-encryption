@@ -337,6 +337,6 @@ class __TwigTemplate_62a56541b2ca82e91dc78a16ab7327c4946884b3e1fe1083a3110bcdf07
         </ul>
     </nav>
 {% endif %}
-", "@KnpPaginator/Pagination/bulma_pagination.html.twig", "/home/bonoit/Projets Web/site-encryption/vendor/knplabs/knp-paginator-bundle/templates/Pagination/bulma_pagination.html.twig");
+", "@KnpPaginator/Pagination/bulma_pagination.html.twig", "/var/www/html/vendor/knplabs/knp-paginator-bundle/templates/Pagination/bulma_pagination.html.twig");
     }
 }

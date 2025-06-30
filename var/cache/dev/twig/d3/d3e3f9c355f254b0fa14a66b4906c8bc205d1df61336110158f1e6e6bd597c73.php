@@ -220,6 +220,6 @@ class __TwigTemplate_9b812d2ee2d2382804419fc4e43b3f919fe2c55287f8e4fec39ac581aeb
         {{ form_end(form) }}
     </section>
 {% endblock %}
-", "user/edit.html.twig", "/home/bonoit/Projets Web/site-encryption/templates/user/edit.html.twig");
+", "user/edit.html.twig", "/var/www/html/templates/user/edit.html.twig");
     }
 }

@@ -84,6 +84,6 @@ class __TwigTemplate_702c5b326d6a07d9a0f746fd84cb4f562fa38489e8a9eed67f9d70aca73
     {
         return new Source("{% deprecated 'The template \"' ~ _self ~'\" is deprecated since Symfony 4.4, will be removed in 5.0.' %}
 {{ include('@Twig/Exception/error.xml.twig') }}
-", "@Twig/Exception/error.rdf.twig", "/home/bonoit/Projets Web/site-encryption/vendor/symfony/twig-bundle/Resources/views/Exception/error.rdf.twig");
+", "@Twig/Exception/error.rdf.twig", "/var/www/html/vendor/symfony/twig-bundle/Resources/views/Exception/error.rdf.twig");
     }
 }

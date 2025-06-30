@@ -306,6 +306,6 @@ class __TwigTemplate_611ccf508a12468f9b315f0d581d3cff388628fbb1088fa6fea1d858dc5
         </tbody>
     </table>
 {% endblock %}
-", "@VichUploader/Collector/mapping_collector.html.twig", "/home/bonoit/Projets Web/site-encryption/vendor/vich/uploader-bundle/Resources/views/Collector/mapping_collector.html.twig");
+", "@VichUploader/Collector/mapping_collector.html.twig", "/var/www/html/vendor/vich/uploader-bundle/Resources/views/Collector/mapping_collector.html.twig");
     }
 }

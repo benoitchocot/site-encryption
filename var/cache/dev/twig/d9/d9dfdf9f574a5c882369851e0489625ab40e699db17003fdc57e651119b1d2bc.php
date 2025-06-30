@@ -1683,6 +1683,6 @@ class __TwigTemplate_7fdf243804be14dfe05ab302c3977421eb45ce0d0f75cb26802fbb3d719
         </tbody>
     </table>
 {% endmacro %}
-", "@Doctrine/Collector/db.html.twig", "/home/bonoit/Projets Web/site-encryption/vendor/doctrine/doctrine-bundle/Resources/views/Collector/db.html.twig");
+", "@Doctrine/Collector/db.html.twig", "/var/www/html/vendor/doctrine/doctrine-bundle/Resources/views/Collector/db.html.twig");
     }
 }

@@ -72,6 +72,6 @@ class __TwigTemplate_018cec148d66317c64bec8e4a96aabe79bef1ed1e7c7913449f35f2a0b7
     {
         return new Source("<?php \$symbol = false !== \$symbol ? (\$symbol ? ' '.\$symbol : ' %') : '' ?>
 <?php echo \$view['form']->block(\$form, 'form_widget_simple', ['type' => \$type ?? 'text']).\$view->escape(\$symbol) ?>
-", "@Framework/Form/percent_widget.html.php", "/home/bonoit/Projets Web/site-encryption/vendor/symfony/framework-bundle/Resources/views/Form/percent_widget.html.php");
+", "@Framework/Form/percent_widget.html.php", "/var/www/html/vendor/symfony/framework-bundle/Resources/views/Form/percent_widget.html.php");
     }
 }

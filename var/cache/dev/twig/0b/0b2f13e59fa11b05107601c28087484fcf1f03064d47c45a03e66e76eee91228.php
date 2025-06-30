@@ -76,6 +76,6 @@ class __TwigTemplate_7ce27b61de1fee660b261171166068083fc66926a0b121d54229b844758
     <?php \$attr['data-prototype'] = \$view->escape(\$view['form']->row(\$prototype)) ?>
 <?php endif ?>
 <?php echo \$view['form']->widget(\$form, ['attr' => \$attr]) ?>
-", "@Framework/Form/collection_widget.html.php", "/home/bonoit/Projets Web/site-encryption/vendor/symfony/framework-bundle/Resources/views/Form/collection_widget.html.php");
+", "@Framework/Form/collection_widget.html.php", "/var/www/html/vendor/symfony/framework-bundle/Resources/views/Form/collection_widget.html.php");
     }
 }

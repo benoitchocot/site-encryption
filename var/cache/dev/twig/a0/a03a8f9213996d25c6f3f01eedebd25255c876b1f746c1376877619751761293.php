@@ -281,6 +281,6 @@ class __TwigTemplate_ed3f288d825db31b80dbdb582bc04005964ac29fd5e49063b5d195f0ada
     {%- set label = label|trans|default(label) -%}
     {{- block('form_label') -}}
 {%- endblock -%}
-", "@VichUploader/Form/fields.html.twig", "/home/bonoit/Projets Web/site-encryption/vendor/vich/uploader-bundle/Resources/views/Form/fields.html.twig");
+", "@VichUploader/Form/fields.html.twig", "/var/www/html/vendor/vich/uploader-bundle/Resources/views/Form/fields.html.twig");
     }
 }

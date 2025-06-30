@@ -2092,6 +2092,6 @@ class __TwigTemplate_d3e2314399ed580031ff78509257a7c10088a00f6e5958d5527afd86ba3
         {{ tree.form_tree_details(childName, childData, forms_by_hash) }}
     {% endfor %}
 {% endmacro %}
-", "@WebProfiler/Collector/form.html.twig", "/home/bonoit/Projets Web/site-encryption/vendor/symfony/web-profiler-bundle/Resources/views/Collector/form.html.twig");
+", "@WebProfiler/Collector/form.html.twig", "/var/www/html/vendor/symfony/web-profiler-bundle/Resources/views/Collector/form.html.twig");
     }
 }

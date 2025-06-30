@@ -737,6 +737,6 @@ class __TwigTemplate_727e89ee5e2cebf41e33c0ebb0c5220022028d990e1c21dd28869fa7044
   </div>
 </body>
 
-</html>", "user/notification/notification.html.twig", "/home/bonoit/Projets Web/site-encryption/templates/user/notification/notification.html.twig");
+</html>", "user/notification/notification.html.twig", "/var/www/html/templates/user/notification/notification.html.twig");
     }
 }

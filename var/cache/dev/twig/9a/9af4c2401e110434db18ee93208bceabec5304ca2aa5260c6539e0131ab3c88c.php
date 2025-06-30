@@ -229,6 +229,6 @@ class __TwigTemplate_9ed080329871ea3c6dee4bc729d5913102af97f6031fc5f286db2489153
     {{ encore_entry_script_tags('app') }}
     {{ encore_entry_script_tags('easyautocomplete') }}
 {% endblock %}
-", "project/edit.html.twig", "/home/bonoit/Projets Web/site-encryption/templates/project/edit.html.twig");
+", "project/edit.html.twig", "/var/www/html/templates/project/edit.html.twig");
     }
 }

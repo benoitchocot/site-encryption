@@ -132,6 +132,6 @@ class __TwigTemplate_e9d292a8a4b39394e7f0b20eaf1c129fc2dbe95c41da5166ae9781a2108
 .exception-message-wrapper .container {
     min-height: unset;
 }
-", "@WebProfiler/Collector/exception.css.twig", "/home/bonoit/Projets Web/site-encryption/vendor/symfony/web-profiler-bundle/Resources/views/Collector/exception.css.twig");
+", "@WebProfiler/Collector/exception.css.twig", "/var/www/html/vendor/symfony/web-profiler-bundle/Resources/views/Collector/exception.css.twig");
     }
 }

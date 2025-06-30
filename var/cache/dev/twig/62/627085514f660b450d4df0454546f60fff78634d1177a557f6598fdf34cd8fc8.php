@@ -78,6 +78,6 @@ class __TwigTemplate_b1cf6e90e4e79dfa43ef2e6d11bab08e40abd709a26461ec4756085be51
 <?php else: ?>
 <?php echo \$view['form']->block(\$form, 'choice_widget_collapsed') ?>
 <?php endif ?>
-", "@Framework/Form/choice_widget.html.php", "/home/bonoit/Projets Web/site-encryption/vendor/symfony/framework-bundle/Resources/views/Form/choice_widget.html.php");
+", "@Framework/Form/choice_widget.html.php", "/var/www/html/vendor/symfony/framework-bundle/Resources/views/Form/choice_widget.html.php");
     }
 }

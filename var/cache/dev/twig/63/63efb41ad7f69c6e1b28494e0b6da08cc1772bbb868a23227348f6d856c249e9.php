@@ -78,6 +78,6 @@ class __TwigTemplate_2dde36dcbe6473ebb0641bdfaaab71c5ee9917e9df2e42e1ca97496d3a3
     <?php if (strlen(\$value) > 0): ?> value=\"<?php echo \$view->escape(\$value) ?>\"<?php endif ?>
     <?php if (\$checked): ?> checked=\"checked\"<?php endif ?>
 />
-", "@Framework/Form/checkbox_widget.html.php", "/home/bonoit/Projets Web/site-encryption/vendor/symfony/framework-bundle/Resources/views/Form/checkbox_widget.html.php");
+", "@Framework/Form/checkbox_widget.html.php", "/var/www/html/vendor/symfony/framework-bundle/Resources/views/Form/checkbox_widget.html.php");
     }
 }

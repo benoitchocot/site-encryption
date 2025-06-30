@@ -206,6 +206,6 @@ class __TwigTemplate_b23a16b940a6639dbdfce4b19e4e7bc4d03a0ec186284d499abeb6bae9b
         </div>
     </div>
 </nav>
-", "parts/_navbar.html.twig", "/home/bonoit/Projets Web/site-encryption/templates/parts/_navbar.html.twig");
+", "parts/_navbar.html.twig", "/var/www/html/templates/parts/_navbar.html.twig");
     }
 }

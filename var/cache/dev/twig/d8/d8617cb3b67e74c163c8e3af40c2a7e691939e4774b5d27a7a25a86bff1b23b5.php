@@ -223,6 +223,6 @@ class __TwigTemplate_25f39ed23a3222a56897074008125cc2e0f8285ae7e5d1158c854e72d6a
     {% endfor %}
     </tbody>
 </table>
-", "@Twig/Exception/logs.html.twig", "/home/bonoit/Projets Web/site-encryption/vendor/symfony/twig-bundle/Resources/views/Exception/logs.html.twig");
+", "@Twig/Exception/logs.html.twig", "/var/www/html/vendor/symfony/twig-bundle/Resources/views/Exception/logs.html.twig");
     }
 }

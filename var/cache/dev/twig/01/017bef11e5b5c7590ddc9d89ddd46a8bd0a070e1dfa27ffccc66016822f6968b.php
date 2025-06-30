@@ -173,6 +173,6 @@ class __TwigTemplate_577a7f3bfc55671e588570a0a32ee001297250b5abc28d7de0be853b66b
 
     {{ include('@WebProfiler/Profiler/toolbar_item.html.twig', { link: profiler_url, name: 'time', status: status_color }) }}
 {% endblock %}
-", "@WebProfiler/Collector/memory.html.twig", "/home/bonoit/Projets Web/site-encryption/vendor/symfony/web-profiler-bundle/Resources/views/Collector/memory.html.twig");
+", "@WebProfiler/Collector/memory.html.twig", "/var/www/html/vendor/symfony/web-profiler-bundle/Resources/views/Collector/memory.html.twig");
     }
 }

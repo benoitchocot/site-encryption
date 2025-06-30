@@ -239,6 +239,6 @@ class __TwigTemplate_351aba5aca4117d629b683def6a2869bd80d8f16779600b7b396d876ded
 
     {{ include('project/_delete_form.html.twig') }}
 {% endblock %}
-", "project/show.html.twig", "/home/bonoit/Projets Web/site-encryption/templates/project/show.html.twig");
+", "project/show.html.twig", "/var/www/html/templates/project/show.html.twig");
     }
 }

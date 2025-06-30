@@ -239,6 +239,6 @@ class __TwigTemplate_05d57506112863cfd24e6afc65e862675c22fbfa5191ae8a3b752796f9e
     </div>
 </div>
 
-", "project/_addFeatures.html.twig", "/home/bonoit/Projets Web/site-encryption/templates/project/_addFeatures.html.twig");
+", "project/_addFeatures.html.twig", "/var/www/html/templates/project/_addFeatures.html.twig");
     }
 }

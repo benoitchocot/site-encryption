@@ -281,6 +281,6 @@ class __TwigTemplate_ed36d8b7117e4fcc86cc0d62417a2024f5ed01c7189dcb5492d0e63dd49
     {{ encore_entry_link_tags('app') }}
     {{ encore_entry_link_tags('category') }}
 {% endblock %}
-", "category/index.html.twig", "/home/bonoit/Projets Web/site-encryption/templates/category/index.html.twig");
+", "category/index.html.twig", "/var/www/html/templates/category/index.html.twig");
     }
 }

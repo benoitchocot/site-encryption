@@ -1189,6 +1189,6 @@ class __TwigTemplate_5a85961970dd34b5630272aafd5fc4647e3cb8dadf34b0ce63dffa3990b
         <span>{{ route|default(controller) }}</span>
     {%- endif %}
 {% endmacro %}
-", "@WebProfiler/Collector/request.html.twig", "/home/bonoit/Projets Web/site-encryption/vendor/symfony/web-profiler-bundle/Resources/views/Collector/request.html.twig");
+", "@WebProfiler/Collector/request.html.twig", "/var/www/html/vendor/symfony/web-profiler-bundle/Resources/views/Collector/request.html.twig");
     }
 }

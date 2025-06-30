@@ -187,6 +187,6 @@ class __TwigTemplate_b8c9023dd36960a424f48e01bcf5dca81d2157888770f5961270fd64c18
     {{ parent() }}
     {{ encore_entry_link_tags('errors') }}
 {% endblock %}
-", "base.error.html.twig", "/home/bonoit/Projets Web/site-encryption/templates/base.error.html.twig");
+", "base.error.html.twig", "/var/www/html/templates/base.error.html.twig");
     }
 }
